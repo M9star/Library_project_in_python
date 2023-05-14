@@ -1,11 +1,13 @@
 import datetime
 import sys
+import requests
 
 class Booxsfee:
-    def __init__(self, name='default name', contact='default contact ', address='default address'):
+    def __init__(self, name='default name', contact='default contact ', address='default address',email = 'default email'):
         self.name = name
         self.contact = contact
         self.address = address
+        self.email = email
 
     def display(self):
         print(f"Name: {self.name}, Contact: {self.contact}, Address: {self.address}")
@@ -73,8 +75,24 @@ while True:
         name = input("Enter name: ")
         contact = input("Enter contact: ")
         address = input("Enter address: ")
-        Reader = Booxsfee(name, contact, address)
-        reader_info = f"Name: {name}, Contact: {contact}, Address: {address}\n"
+        email = input("Email address ")
+        Reader = Booxsfee(name, contact, address, email)
+
+        # get the user's IP address
+        response = requests.get('https://api.ipify.org?format=json')
+        ip_address = response.json()['ip']
+
+        # use the IP address to get the user's location
+        response = requests.get(f'https://geolocation-db.com/json/{ip_address}')
+        location = response.json()
+
+        print(location)
+        country_name = location['country_name']
+        city = location['city']
+        state = location['state']
+
+        reader_info = f"Name: {name}, Contact: {contact}, Address: {address}, Country: {country_name}, City: {city}, State: {state}\n"
+        print(reader_info)
         with open('reader.txt', 'a') as file:
             file.write(reader_info)
         with open('reader.txt') as file:
