@@ -91,13 +91,13 @@ while True:
         city = location['city']
         state = location['state']
 
-        reader_info = f"Name: {name}, Contact: {contact}, Address: {address}, Country: {country_name}, City: {city}, State: {state}\n"
+        reader_info = f"Name: {name}, Contact: {contact}, Address: {address},Email: {email}, Country: {country_name}, City: {city}, State: {state}\n"
         print(reader_info)
         with open('reader.txt', 'a') as file:
             file.write(reader_info)
         with open('reader.txt') as file:
             content = file.read()
-        print(content)
+        # print(content)
 
     if get_in == 1:
         name = input("Enter your name like: Mausam Gurung")

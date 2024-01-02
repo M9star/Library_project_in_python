@@ -3,4 +3,7 @@ Name: Shubham Bista, Contact: 9843791593, Address: Kalimati
 Name: Krishna Rawal, Contact: 987656454, Address: Kirtipur
 Name: Rojina Gurung, Contact: 9862775083, Address: Chunikhel
 Name: Shalon Maharjan, Contact: 9761611269, Address: White House
-Name: Aarati Shrestha, Contact: 9813683924, Address: Bhaktapur, Country: Nepal, City: Kathmandu, State: Bagmati Zone
+MName: Aarati Shrestha, Contact: 9813683924, Address: Bhaktapur, Country: Nepal, City: Kathmandu, State: Bagmati Zone
+Name: Roshmi Gurung, Contact: 9746222163, Address: Jhapa, Birtamode, Country: Nepal, City: Kathmandu, State: Bagmati Zone
+Name: Ajaya Sauden, Contact: 9862631747, Address: Lalitpur,Email: ajaya.saudem.747@gmail.com, Country: Nepal, City: Kathmandu, State: Bagmati Zone
+Name: Codix, Contact: 9843645685, Address: Machhegaun,Email: cod.172gmail.com, Country: Nepal, City: Kathmandu, State: Bagmati Zone
